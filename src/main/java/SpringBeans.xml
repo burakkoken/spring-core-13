@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd">
+
+	<context:annotation-config></context:annotation-config>
+
+	<bean id="homeAddress" class="Address">
+		<property name="city" value="Kocaeli"></property>
+		<property name="street" value="İzmit"></property>
+	</bean>
+	
+	<bean id="jobAddress" class="Address">
+		<property name="city" value="İstanbul"></property>
+		<property name="street" value="Beşiktaş"></property>
+	</bean>
+	
+	<bean id="person" class="Person">
+		<property name="name" value="Burak Köken"></property>
+		<property name="age" value="23"></property>
+		<property name="telephone" value="123456"></property>
+		<!--  <property name="address" ref="homeAddress"></property> -->
+	</bean>
+	
+</beans>
